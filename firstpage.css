@@ -1,0 +1,63 @@
+nav ul{
+    position: relatve;
+    top: 0;
+    left: 0;
+   list-style-type:none;
+   background-color: rgb(241, 211, 241);
+   overflow: hidden;
+   height: 7vh;
+   border-radius: 10px;
+   border: 2px solid black;
+   
+}
+
+
+nav ul li{
+    float: left;
+    margin-right: 10vh;
+   
+}
+
+nav ul li a{
+    padding: 0.25vh 1vh;
+    text-decoration:none;
+    color: darkblue;
+    font-size:xx-large;
+  
+}
+body{
+    height: 100vh;
+    background-image: url('backgroundpic.jpg.jpg');
+    background-size: cover;
+    font-family: 'Gill Sans', 'Gill Sans MT' 'Trebuchet MS', sans-serif;
+    padding: 10px;
+    
+}
+
+nav ul li a:hover, nav ul li a:focus{
+    color: pink;
+    background-color: white;
+
+
+}
+
+.main{
+    position: relative;
+    font-size: larger;
+}
+
+
+footer img{
+    position: fixed;
+    height: 50px;
+    width: 50px;
+    bottom: 5%;
+    right: 50%;
+}
+
+footer p{
+    font-size: small;
+    position: fixed;
+    bottom: 0;
+    right: 47%;
+}
