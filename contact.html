@@ -4,8 +4,52 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Contact us</title>
+    <link href="https://fonts.googleapis.com/css2?family=Lato&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="contact.css">
+
 </head>
 <body>
+
+    <input type="checkbox" id="check">
+    <label for="check">
+      <i class="fas fa-bars" id="btn"></i>
+      <i class="fas fa-times" id="cancel"></i>
+    </label>
+    <div class="sidebar">
+        <header>Menu</header>
+        <a href="#" class="active">
+          <i class="fas fa-qrcode"></i>
+          <span>Dashboard</span>
+        </a>
+        <a href="#">
+          <i class="fas fa-link"></i>
+          <span>Shortcuts</span>
+        </a>
+        <a href="#">
+          <i class="fas fa-stream"></i>
+          <span>Overview</span>
+        </a>
+        <a href="#">
+           <i class="fas fa-calendar"></i>
+          <span>Events</span>
+        </a>
+        <a href="#">
+          <i class="far fa-question-circle"></i>
+          <span>About</span>
+        </a>
+        <a href="#">
+          <i class="fas fa-sliders-h"></i>
+          <span>Services</span>
+        </a>
+        <a href="#">
+          <i class="far fa-envelope"></i>
+          <span>Contact</span>
+        </a>
+    </div>
+
+
+
+
     <h2> For more information, do not hesitate to contact us! </h2>
     <table border="1"> 
         <tr>
@@ -27,7 +71,27 @@
         Mo-Fri <br>
         09:00-15:00</h4>
     <div>
-        <img src="footerpic.jpg.jpg">
+       
     </div>
+
+
+    <script>
+        document.addEventListener('DOMContentLoaded', function () {
+          var checkbox = document.getElementById('check');
+          var labelCancel = document.querySelector('label#cancel');
+      
+          checkbox.addEventListener('change', function () {
+            if (checkbox.checked) {
+              labelCancel.style.marginLeft = '245px';
+              labelCancel.style.opacity = '1';
+              labelCancel.style.visibility = 'visible';
+            } else {
+              labelCancel.style.marginLeft = '0';
+              labelCancel.style.opacity = '0';
+              labelCancel.style.visibility = 'hidden';
+            }
+          });
+        });
+      </script>
 </body>
 </html>
